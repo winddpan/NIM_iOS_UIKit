@@ -37,8 +37,9 @@ FOUNDATION_EXPORT const unsigned char NIMKitVersionString[];
 #import "NIMMessageCellProtocol.h"  //message cell事件回调
 #import "NIMSessionConfig.h"        //会话页面配置
 #import "NIMKitEvent.h"             //点击事件封装类
-
+#import "NIMSessionNotificationContentView.h"
 #import "NIMCellLayoutConfig.h"
+#import "M80AttributedLabel+NIMKit.h"
 
 /**
  *  消息cell的视觉模板

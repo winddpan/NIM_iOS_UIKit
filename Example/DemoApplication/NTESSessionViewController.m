@@ -9,6 +9,29 @@
 #import "NTESSessionViewController.h"
 #import "NTESSessionConfig.h"
 #import "NTESAttachment.h"
+#import <NIMKit/NIMKit.h>
+#import <NIMKit/NIMKitSetting.h>
+#import <NIMKit/UIImage+NIMkit.h>
+#import <NIMKit/NIMKitDataProviderImpl.h>
+#import <NIMKit/NIMBadgeView.h>
+#import <NIMKit/NIMAvatarImageView.h>
+#import <NIMKit/NIMSessionListCell.h>
+#import <NIMKit/NIMSessionTimestampCell.h>
+#import <NIMKit/NIMGrowingTextView.h>
+#import <NIMKit/NIMSessionInteractorImpl.h>
+#import <NIMKit/NIMKitMediaFetcher.h>
+#import <NIMKit/NIMMessageMaker.h>
+#import <NIMKit/NIMKitTitleView.h>
+#import <NIMKit/NIMMessageCell.h>
+#import <NIMKit/NIMSessionTextContentView.h>
+#import <NIMKit/NIMSessionImageContentView.h>
+#import <NIMKit/NIMSessionVideoContentView.h>
+#import <NIMKit/NIMSessionAudioContentView.h>
+#import <NIMKit/NIMSessionNetChatNotifyContentView.h>
+#import <NIMKit/NIMInputMoreContainerView.h>
+#import <NIMKit/NIMKitLocationPoint.h>
+#import <NIMKit/NIMLocationViewController.h>
+#import <NIMKit/M80AttributedLabel+NIMKit.h>
 
 @interface NTESSessionViewController ()
 
@@ -29,6 +52,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UILabel *label = [[UILabel alloc] init];
+    NIMKitConfig *config = [NIMKitConfig new];
+    int number = config.messageInterval;
 }
 
 - (NSString *)sessionTitle{
