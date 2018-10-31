@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Full_Static' do |fs|
       fs.vendored_library = 'NIMKit/NIMKit/Library/*.a'
-      fs.source_files = 'NIMKit/NIMKit/**/*.h'
-#      fs.public_header_files = 'NIMKit/NIMKit/**/*.h'
+      fs.public_header_files = 'NIMKit/NIMKit/**/*.h'
       fs.dependency 'NIMKit/Core'
       fs.dependency 'NIMSDK', '~> 5.6.0'
   end
